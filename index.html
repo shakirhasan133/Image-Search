@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Image Website</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Find Your Perfect Image</h1>
+        <div class="search-form">
+          <div class="search-bar-container">
+            <input
+              id="inputValue"
+              type="text"
+              placeholder="Search images..."
+              class="search-bar"
+            />
+            <button type="submit" class="search-button" id="searchBtn">
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="image-gallery" id="image-gallery"></section>
+      <section id="loadMore"></section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
